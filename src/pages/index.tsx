@@ -29,7 +29,7 @@ export default function Home() {
           <span
             className={`${bodoni.className} text-6xl text-white text-center max-w-[60%]`}
           >
-            Unleash Your Best Look
+            Keep up your fresh
           </span>
         </div>
         <div className="absolute h-full w-full bg-def-black top-0 opacity-40"></div>
