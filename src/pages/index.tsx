@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { Bodoni_Moda } from "next/font/google";
+import { Karantina } from "next/font/google";
+import Hero from "src/components/molecules/Hero";
 
-const bodoni = Bodoni_Moda({
-  weight: ["900"],
+const karantina = Karantina({
+  weight: ["700"],
   style: ["normal"],
   subsets: ["latin"],
 });
@@ -10,30 +11,17 @@ const bodoni = Bodoni_Moda({
 export default function Home() {
   return (
     <main className="">
-      <div className="relative h-[85vh] flex justify-center items-center">
-        <Image
-          src="/img/hero-bg.webp"
-          alt="hero-bg"
-          fill
-          priority
-          className="object-cover"
-        />
+      {/* <div className="relative h-[85vh] flex justify-center items-center">
         <div className="z-10 flex flex-col justify-center items-center">
-          <Image
-            src="/img/bankx_white_logo.webp"
-            alt="hero-bg"
-            height={130}
-            width={198}
-            className="shadow-lg shadow-def-black"
-          />
           <span
-            className={`${bodoni.className} text-6xl text-white text-center max-w-[60%]`}
+            className={`${karantina.className} text-6xl text-white text-center max-w-[60%]`}
           >
             Keep up your fresh
           </span>
         </div>
         <div className="absolute h-full w-full bg-def-black top-0 opacity-40"></div>
-      </div>
+      </div> */}
+      <Hero />
     </main>
   );
 }
