@@ -1,5 +1,6 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps, ReactElement } from "react";
 import clsx from "clsx";
+import tw from "tw-tailwind";
 
 type ButtonProps = DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,
@@ -12,6 +13,8 @@ type ButtonProps = DetailedHTMLProps<
   suffixIcon?: ReactElement;
   prefixIcon?: ReactElement;
 };
+
+const StyledButton = tw.button``;
 
 const Button = ({
   label,
@@ -28,8 +31,8 @@ const Button = ({
       className={clsx(
         "rounded outline-none",
         isOutline
-          ? "border-def-black"
-          : "bg-def-black text-white text-sm border-none",
+          ? "border-def-black bg-white"
+          : "bg-[#171717] text-white text-sm border-none",
         buttonSize === "large"
           ? "px-6 py-3"
           : buttonSize === "small"
