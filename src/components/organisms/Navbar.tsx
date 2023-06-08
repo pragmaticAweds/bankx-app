@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Button from "../atoms/Button";
+
 import Link from "next/link";
+import CartIcon from "../atoms/vectors/CartIcon";
 
 const Navbar = () => {
   const navlinks = [
@@ -13,14 +14,16 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between py-2 px-5 items-center border-b">
       <Image src="/img/bankx_logo.webp" alt="logo" width={70} height={46} />
-      <div className="space-x-8 font-medium">
+      <div className="space-x-16 font-medium">
         {navlinks.map(({ name, path }, i) => (
           <Link href={path} key={name + i} className="">
             {name}
           </Link>
         ))}
       </div>
-      <Button label="Book Appointment" />
+      <div className="h-8 w-8 grid place-content-center rounded-full p-4 border border-[#141313]">
+        <CartIcon />
+      </div>
     </nav>
   );
 };

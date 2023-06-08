@@ -12,6 +12,7 @@ type ButtonProps = DetailedHTMLProps<
   buttonSize?: "large" | "small";
   suffixIcon?: ReactElement;
   prefixIcon?: ReactElement;
+  styles?: string;
 };
 
 const StyledButton = tw.button``;
@@ -23,6 +24,7 @@ const Button = ({
   suffixIcon,
   prefixIcon,
   buttonSize,
+  styles,
   ...restProps
 }: ButtonProps) => {
   return (
@@ -31,13 +33,14 @@ const Button = ({
       className={clsx(
         "rounded outline-none",
         isOutline
-          ? "border-def-black bg-white"
-          : "bg-[#171717] text-white text-sm border-none",
+          ? "border-def-black bg-white hover:bg-def-black hover:text-white hover:border hover:border-white"
+          : "bg-def-black text-white text-sm hover:bg-white hover:text-black hover:border hover:border-black",
         buttonSize === "large"
           ? "px-6 py-3"
           : buttonSize === "small"
           ? "px-2 py-1"
-          : "px-3 py-2"
+          : "w-max px-4 h-10",
+        styles
       )}
     >
       {prefixIcon ? prefixIcon : null}
