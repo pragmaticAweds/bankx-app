@@ -11,17 +11,12 @@ const karantina = Karantina({
 export default function Home() {
   return (
     <main className="">
-      {/* <div className="relative h-[85vh] flex justify-center items-center">
-        <div className="z-10 flex flex-col justify-center items-center">
-          <span
-            className={`${karantina.className} text-6xl text-white text-center max-w-[60%]`}
-          >
-            Keep up your fresh
-          </span>
-        </div>
-        <div className="absolute h-full w-full bg-def-black top-0 opacity-40"></div>
-      </div> */}
       <Hero />
+      <div className="w-full flex justify-center">
+        <span className="3 bg-def-black items-center"></span>
+        <span className="">Services</span>
+        <span className=""></span>
+      </div>
     </main>
   );
 }
