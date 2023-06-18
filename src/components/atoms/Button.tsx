@@ -34,7 +34,7 @@ const Button = ({
         "rounded outline-none",
         isOutline
           ? "border-def-black bg-white hover:bg-def-black hover:text-white hover:border hover:border-white"
-          : "bg-def-black text-white text-sm hover:bg-white hover:text-black hover:border hover:border-black",
+          : "bg-def-black text-white hover:bg-white hover:text-black hover:border hover:border-black",
         buttonSize === "large"
           ? "px-6 py-3"
           : buttonSize === "small"
