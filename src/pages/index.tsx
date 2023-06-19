@@ -21,10 +21,18 @@ export default function Home() {
         <span className="uppercase">Services</span>
         <span className="3 bg-def-black items-center w-40 h-[0.065rem]"></span>
       </div>
-      <div className="flex justify-around items-center">
-        <div className="bg-def-black  rounded-full shadow p-4">
-          <Image src={clipperSvg} alt="clipper" height={70} width={70} />
+      <div className="grid [grid-template-columns:repeat(auto-fit,minmax(0,18rem))] justify-around items-center">
+        <div className="flex flex-col items-center gap-y-1">
+          <div className="bg-def-black rounded-full shadow p-4">
+            <Image src={clipperSvg} alt="clipper" height={70} width={70} />
+          </div>
+          <h2 className="font-bold text-xl">Trim & Cut</h2>
+          <p className="text-center">
+            At The Finest Barbershop, we offer a wide range of professional hair
+            cutting and grooming services for men
+          </p>
         </div>
+
         <div className="bg-def-black  rounded-full shadow p-4">
           <Image src={shampooSvg} alt="shampoo" height={70} width={70} />
         </div>
