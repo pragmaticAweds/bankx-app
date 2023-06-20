@@ -3,5 +3,22 @@
     "heroImage": "/img/hero-bg.webp",
     "heroText": "Keep up your fresh with bankx cut",
     "heroContent": "At Bankx Cutz, we offer a wide range of professional hair cutting and grooming services. Our experienced barbers use the latest techniques and tools to give you the perfect look. Whether you're in need of a classic haircut, straight razor shave, or beard trim, we've got you covered."
-  }
+  },
+  "services": [
+    {
+      "img": "/svgs/clipper.svg",
+      "title": "Trim & Cut",
+      "content": "At The Finest Barbershop, we offer a wide range of professional hair cutting and grooming services for men"
+    },
+    {
+      "img": "svgs/soap-dispenser.svg",
+      "title": "Wash & Dry",
+      "content": "At The Finest Barbershop, we offer a wide range of professional hair cutting and grooming services for men"
+    },
+    {
+      "img": "svgs/trimmer.svg",
+      "title": "Beard Trim",
+      "content": "At The Finest Barbershop, we offer a wide range of professional hair cutting and grooming services for men"
+    }
+  ]
 }
