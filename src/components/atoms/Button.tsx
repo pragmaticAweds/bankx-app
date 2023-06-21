@@ -36,10 +36,10 @@ const Button = ({
           ? "border-def-black bg-white hover:bg-def-black hover:text-white hover:border hover:border-white"
           : "bg-def-black text-white hover:bg-white hover:text-black hover:border hover:border-black",
         buttonSize === "large"
-          ? "px-6 py-3"
+          ? "w-32 h-[2.75rem]"
           : buttonSize === "small"
-          ? "px-2 py-1"
-          : "w-max px-4 h-10",
+          ? "w-28 h-8 text-sm"
+          : "w-32 h-10",
         styles
       )}
     >

@@ -7,18 +7,21 @@
   "services": [
     {
       "img": "/svgs/clipper.svg",
-      "title": "Trim & Cut",
+      "heading": "Trim & Cut",
       "content": "At The Finest Barbershop, we offer a wide range of professional hair cutting and grooming services for men"
     },
     {
       "img": "svgs/soap-dispenser.svg",
-      "title": "Wash & Dry",
+      "heading": "Wash & Dry",
       "content": "At The Finest Barbershop, we offer a wide range of professional hair cutting and grooming services for men"
     },
     {
       "img": "svgs/trimmer.svg",
-      "title": "Beard Trim",
+      "heading": "Beard Trim",
       "content": "At The Finest Barbershop, we offer a wide range of professional hair cutting and grooming services for men"
     }
-  ]
+  ],
+  "aboutUs": {
+    "content": "At The Finest Barbershop, we offer a wide range of professional hair cutting and grooming services for men. Our experienced barbers use the latest techniques and tools to give you the perfect look. Whether you're in need of a classic haircut, straight razor shave, or beard trim, we've got you covered. At The Finest Barbershop, we offer a wide range of professional hair cutting and grooming services for men. Our experienced barbers use the latest techniques and tools to give you the perfect look. Whether you're in need of a classic haircut, straight razor shave, or beard trim, we've got you covered."
+  }
 }

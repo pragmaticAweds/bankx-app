@@ -11,20 +11,22 @@ const playfair = Playfair_Display({
 
 const ServiceCard = ({
   img,
-  title,
+  heading,
   content,
 }: {
   img: any;
-  title: string;
+  heading: string;
   content: string;
 }) => {
   return (
-    <div className="flex flex-col items-center gap-y-1">
+    <div className="flex flex-col items-center gap-y-2">
       <div className="bg-def-black rounded-full shadow p-6">
         <Image src={img} alt="clipper" height={70} width={70} />
       </div>
-      <h2 className={`${playfair.className} font-bold text-xl`}>{title}</h2>
-      <p className="text-center">{content}</p>
+      <h2 className={`${playfair.className} font-bold text-xl`}>{heading}</h2>
+      <p className="text-center max-w-[80%] md:max-w-none leading-6">
+        {content}
+      </p>
     </div>
   );
 };
