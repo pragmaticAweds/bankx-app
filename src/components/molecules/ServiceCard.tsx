@@ -19,7 +19,7 @@ const ServiceCard = ({
   content: string;
 }) => {
   return (
-    <div className="flex flex-col items-center gap-y-2">
+    <div className="flex flex-col items-center gap-y-2 border p-6 rounded-md transition duration-200 hover:scale-110">
       <div className="bg-def-black rounded-full shadow p-6">
         <Image src={img} alt="clipper" height={70} width={70} />
       </div>

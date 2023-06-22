@@ -12,7 +12,7 @@ const karantina = Karantina({
   subsets: ["latin"],
 });
 
-const StyledHero = tw.div`relative h-screen flex`;
+const StyledHero = tw.div`relative h-[90vh] flex`;
 
 const Hero = () => {
   const { hero } = data;

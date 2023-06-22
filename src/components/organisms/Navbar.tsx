@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: "About us", path: "about-us" },
   ];
   return (
-    <nav className="flex justify-between py-2 px-5 items-center border-b">
+    <nav className="flex justify-between py-3 px-5 items-center border-b">
       <Image src="/img/bankx_logo.webp" alt="logo" width={70} height={46} />
       <div className="space-x-16 font-medium">
         {navlinks.map(({ name, path }, i) => (
