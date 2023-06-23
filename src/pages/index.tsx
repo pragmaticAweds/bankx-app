@@ -19,9 +19,13 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="bg-[url(../../public/img/bg-chair.webp)]  h-[70vh] bg-cover bg-center bg-no-repeat">
+      <section className="">
+        <SectionHeader heading="Meet your Stylists" />
+      </section>
+
+      {/* <div className="bg-[url(../../public/img/hair-cut-2.webp)]  h-[70vh] bg-contain bg-no-repeat">
         <div className=""></div>
-      </div>
+      </div> */}
     </main>
   );
 }
