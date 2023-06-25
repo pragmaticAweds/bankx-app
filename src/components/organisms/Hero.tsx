@@ -5,6 +5,7 @@ import data from "../../data.json";
 
 import tw from "tw-tailwind";
 import Button from "../atoms/Button";
+import Swiper from "../molecules/Swiper";
 
 const karantina = Karantina({
   weight: ["400", "700"],
@@ -12,20 +13,14 @@ const karantina = Karantina({
   subsets: ["latin"],
 });
 
-const StyledHero = tw.div`relative h-[90vh] flex`;
+const StyledHero = tw.div`relative h-[90vh]`;
 
 const Hero = () => {
   const { hero } = data;
   return (
     <StyledHero>
-      <Image
-        src={hero.heroImage}
-        alt="hero-bg"
-        fill
-        priority
-        className="object-cover"
-      />
-      <div className="z-10 flex flex-col justify-center items-center h-full gap-y-4 max-w-3xl mx-auto text-center">
+      <Swiper data={hero.heroImages} />
+      <div className="flex flex-col justify-center items-center gap-y-4 max-w-3xl mx-auto text-center absolute inset-0 z-10">
         <h1 className={`${karantina.className} text-6xl text-white font-bold`}>
           {hero.heroText}
         </h1>
@@ -39,7 +34,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="absolute h-full w-full bg-black top-0 opacity-50"></div>
+      <div className="absolute inset-0 bg-black opacity-60"></div>
     </StyledHero>
   );
 };

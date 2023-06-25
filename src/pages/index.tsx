@@ -4,6 +4,7 @@ import data from "../data.json";
 
 import ServiceCard from "src/components/molecules/ServiceCard";
 import SectionHeader from "src/components/atoms/SectionHeader";
+import Swiper from "src/components/molecules/Swiper";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
       <section className="">
         <SectionHeader heading="Meet your Stylists" />
       </section>
-
+      {/* <Swiper /> */}
       {/* <div className="bg-[url(../../public/img/hair-cut-2.webp)]  h-[70vh] bg-contain bg-no-repeat">
         <div className=""></div>
       </div> */}
