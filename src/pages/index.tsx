@@ -4,7 +4,7 @@ import data from "../data.json";
 
 import ServiceCard from "src/components/molecules/ServiceCard";
 import SectionHeader from "src/components/atoms/SectionHeader";
-import Swiper from "src/components/molecules/Swiper";
+import StylistCard from "src/components/molecules/StylistCard";
 
 export default function Home() {
   return (
@@ -22,11 +22,12 @@ export default function Home() {
 
       <section className="">
         <SectionHeader heading="Meet your Stylists" />
+        <div className="grid gap-y-14 sm:[grid-template-columns:repeat(auto-fit,minmax(0,14rem))] justify-evenly h-full">
+          {data.stylists.map((content) => (
+            <StylistCard key={`stylist-card-${content.name}`} {...content} />
+          ))}
+        </div>
       </section>
-      {/* <Swiper /> */}
-      {/* <div className="bg-[url(../../public/img/hair-cut-2.webp)]  h-[70vh] bg-contain bg-no-repeat">
-        <div className=""></div>
-      </div> */}
     </main>
   );
 }
