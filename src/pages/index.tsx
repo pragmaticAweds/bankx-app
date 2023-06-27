@@ -22,7 +22,7 @@ export default function Home() {
 
       <section className="">
         <SectionHeader heading="Meet your Stylists" />
-        <div className="grid gap-y-14 sm:[grid-template-columns:repeat(auto-fit,minmax(0,14rem))] justify-evenly h-full">
+        <div className="flex gap-x-8 justify-evenly h-full">
           {data.stylists.map((content) => (
             <StylistCard key={`stylist-card-${content.name}`} {...content} />
           ))}
