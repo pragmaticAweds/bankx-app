@@ -12,19 +12,26 @@ const playfair = Playfair_Display({
 const StylistCard = ({
   img,
   name,
-  content,
+  role,
 }: {
   img: any;
   name: string;
-  content?: string;
+  role?: string;
 }) => {
   return (
-    <div className="flex flex-col bg-yellow-700 items-center gap-y-2 border rounded-md transition duration-200 hover:scale-110">
-      <div className="bg-def-black relative flex-[0.8]">
-        <Image src={img} alt="clipper" fill className="object-contain" />
+    <div className="flex flex-col items-center border rounded-md transition duration-200 hover:scale-110 h-96">
+      <div className="bg-def-black relative w-full flex-[0.85] rounded-t-md">
+        <Image
+          src={img}
+          alt="clipper"
+          fill
+          className=" object-cover rounded-md"
+        />
       </div>
-      <h2 className={`${playfair.className} font-bold text-xl`}>{name}</h2>
-      {/* <p className="text-center leading-6 flex-[0.2]">{content}</p> */}
+      <div className="w-full flex-[0.15] flex justify-between items-center px-4">
+        <h2 className={`text-center font-bold text-xl`}>{name}</h2>
+        <span className="">{role}</span>
+      </div>
     </div>
   );
 };

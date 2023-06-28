@@ -28,16 +28,19 @@
   ],
   "stylists": [
     {
-      "img": "/img/hair-cut-3.webp",
-      "name": "Trim & Cut"
+      "img": "/img/hair-cut-4.webp",
+      "name": "Bankx",
+      "role": "CEO"
     },
     {
       "img": "/img/hair-cut-3.webp",
-      "name": "Wash & Dry"
+      "name": "Bankxy",
+      "role": "Barber"
     },
     {
       "img": "/img/hair-cut-3.webp",
-      "name": "Beard Trim"
+      "name": "Only1Bankx",
+      "role": "Barber 2"
     }
   ],
   "aboutUs": {

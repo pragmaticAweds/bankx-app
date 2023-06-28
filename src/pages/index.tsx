@@ -13,16 +13,16 @@ export default function Home() {
 
       <section>
         <SectionHeader heading="services" />
-        <div className="grid gap-y-14 sm:[grid-template-columns:repeat(auto-fit,minmax(0,18rem))] justify-evenly">
+        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(20rem,0.25fr))] gap-y-10 justify-evenly ">
           {data.services.map((content) => (
             <ServiceCard key={`service-card-${content.heading}`} {...content} />
           ))}
         </div>
       </section>
 
-      <section className="">
+      <section>
         <SectionHeader heading="Meet your Stylists" />
-        <div className="flex gap-x-8 justify-evenly h-full">
+        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(20rem,0.25fr))] gap-10 place-content-center mb-8">
           {data.stylists.map((content) => (
             <StylistCard key={`stylist-card-${content.name}`} {...content} />
           ))}
