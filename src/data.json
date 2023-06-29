@@ -6,8 +6,14 @@
       { "img": "/img/hero-bg-2.webp", "name": "hero-img-2" },
       { "img": "/img/hero-bg-3.webp", "name": "hero-img-3" }
     ],
-    "heroText": "Keep up your fresh with bankx cut",
-    "heroContent": "At Bankx Cutz, we offer a wide range of professional hair cutting and grooming services. Our experienced barbers use the latest techniques and tools to give you the perfect look. Whether you're in need of a classic haircut, straight razor shave, or beard trim, we've got you covered."
+    "heroText": "Keeping up your fresh",
+    "heroHeadLight": "@Bankx cut",
+    "texts": [
+      "is what we do",
+      "is what we love",
+      "is why we are the best for you"
+    ],
+    "heroContent": "At Bankx Cut, we are commited to giving you the best look. We offer a wide range of professional hair cutting and grooming services. Our experienced barbers use the latest techniques and tools to give you the perfect look. Whether you're in need of a classic haircut, straight razor shave, or beard trim, we've got you covered."
   },
   "services": [
     {
@@ -28,18 +34,19 @@
   ],
   "stylists": [
     {
-      "img": "/img/hair-cut-4.webp",
+      "img": "/img/barber.webp",
       "name": "Bankx",
       "role": "CEO"
     },
     {
-      "img": "/img/hair-cut-3.webp",
+      "img": "/img/barber.webp",
       "name": "Bankxy",
       "role": "Barber"
     },
+
     {
-      "img": "/img/hair-cut-3.webp",
-      "name": "Only1Bankx",
+      "img": "/img/barber.webp",
+      "name": "Fawzy",
       "role": "Barber 2"
     }
   ],

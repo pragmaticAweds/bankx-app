@@ -31,15 +31,15 @@ const Button = ({
     <button
       {...restProps}
       className={clsx(
-        "rounded outline-none",
+        "rounded outline-none whitespace-nowrap cursor-pointer max-w-max px-4",
         isOutline
-          ? "border-def-black bg-white hover:bg-def-black hover:text-white hover:border hover:border-white"
-          : "bg-def-black text-white hover:bg-white hover:text-black hover:border hover:border-black",
+          ? "border-def-black bg-white  hover:text-white hover:bg-gray-600"
+          : "bg-gray-600 text-white hover:bg-white hover:text-black border-none",
         buttonSize === "large"
-          ? "w-32 h-[2.75rem]"
+          ? "h-[2.75rem] text-lg"
           : buttonSize === "small"
-          ? "w-28 h-8 text-sm"
-          : "w-32 h-10",
+          ? "h-8 text-sm"
+          : "h-10",
         styles
       )}
     >

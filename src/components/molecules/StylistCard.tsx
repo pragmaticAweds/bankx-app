@@ -19,7 +19,7 @@ const StylistCard = ({
   role?: string;
 }) => {
   return (
-    <div className="flex flex-col items-center border rounded-md transition duration-200 hover:scale-110 h-96">
+    <div className="flex flex-col items-center border rounded-md transition duration-200 hover:scale-100 h-96">
       <div className="bg-def-black relative w-full flex-[0.85] rounded-t-md">
         <Image
           src={img}
