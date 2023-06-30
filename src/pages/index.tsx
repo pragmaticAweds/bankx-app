@@ -45,7 +45,7 @@ export default function Home() {
           />
         </div>
         <div className="bg-def-black flex-[0.5] text-white text-4xl font-bold capitalize flex flex-col justify-center items-center">
-          <h1 className="">Save your spot</h1>
+          <h1 className="">Book your spot</h1>
         </div>
       </section>
     </main>
