@@ -8,6 +8,31 @@ import StylistCard from "src/components/molecules/StylistCard";
 import Button from "src/components/atoms/Button";
 import Image from "next/image";
 
+import {
+  DatePicker,
+  DatePickerControl,
+  DatePickerInput,
+  DatePickerTrigger,
+  DatePickerClearTrigger,
+  DatePickerContent,
+  DatePickerYearSelect,
+  DatePickerMonthSelect,
+  DatePickerPrevTrigger,
+  DatePickerViewTrigger,
+  DatePickerNextTrigger,
+  DatePickerGrid,
+  DatePickerRowHeader,
+  DatePickerColumnHeader,
+  DatePickerRowGroup,
+  DatePickerRow,
+  DatePickerDayCell,
+  DatePickerDayCellTrigger,
+  DatePickerMonthCell,
+  DatePickerMonthCellTrigger,
+  DatePickerYearCell,
+  DatePickerYearCellTrigger,
+} from "@ark-ui/react";
+
 export default function Home() {
   return (
     <main className="space-y-14">
@@ -35,7 +60,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="h-[60vh] flex mx-auto max-w-[70%]">
+      <section className="h-[60vh] grid grid-cols-[0.5fr_0.5fr] mx-auto max-w-[70%]">
         <div className="relative h-full flex-[0.5]">
           <Image
             src="/img/bg-chair.webp"
@@ -46,6 +71,7 @@ export default function Home() {
         </div>
         <div className="bg-def-black flex-[0.5] text-white text-4xl font-bold capitalize flex flex-col justify-center items-center">
           <h1 className="">Book your spot</h1>
+          <div className="">{/* <input type="date" name="" id="" /> */}</div>
         </div>
       </section>
     </main>
