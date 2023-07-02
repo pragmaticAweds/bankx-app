@@ -8,31 +8,6 @@ import StylistCard from "src/components/molecules/StylistCard";
 import Button from "src/components/atoms/Button";
 import Image from "next/image";
 
-import {
-  DatePicker,
-  DatePickerControl,
-  DatePickerInput,
-  DatePickerTrigger,
-  DatePickerClearTrigger,
-  DatePickerContent,
-  DatePickerYearSelect,
-  DatePickerMonthSelect,
-  DatePickerPrevTrigger,
-  DatePickerViewTrigger,
-  DatePickerNextTrigger,
-  DatePickerGrid,
-  DatePickerRowHeader,
-  DatePickerColumnHeader,
-  DatePickerRowGroup,
-  DatePickerRow,
-  DatePickerDayCell,
-  DatePickerDayCellTrigger,
-  DatePickerMonthCell,
-  DatePickerMonthCellTrigger,
-  DatePickerYearCell,
-  DatePickerYearCellTrigger,
-} from "@ark-ui/react";
-
 export default function Home() {
   return (
     <main className="space-y-14">
